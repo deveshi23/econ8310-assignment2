@@ -28,7 +28,7 @@ modelFit = model.fit(X_data, y_data)
 
 
 # loading the testing data and making predictions
-test = pd.read_csv(r"C:\Users\deves\Desktop\ASSIGNMENTS\econ8310-assignment2\assignment2test.csv")
+test = pd.read_csv("https://github.com/dustywhite7/econ8310-assignment2/blob/main/assignment2train.csv")
 
 for col in test.columns:
     if test[col].dtype == 'object':
