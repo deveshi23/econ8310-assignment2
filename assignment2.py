@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 
 # loading and preparing training data
-data = pd.read_csv("https://github.com/dustywhite7/Econ8310/raw/master/AssignmentData/assignment3.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/dustywhite7/econ8310-assignment2/refs/heads/main/assignment2train.csv")
 
 # separating independent and dependent variables
 y = data['meal']  # dependent
@@ -28,7 +28,7 @@ modelFit = model.fit(X_data, y_data)
 
 
 # loading the testing data and making predictions
-test = pd.read_csv("https://github.com/dustywhite7/econ8310-assignment2/blob/main/assignment2train.csv", quotechar='"', engine="python", on_bad_lines='skip')
+test = pd.read_csv("https://raw.githubusercontent.com/dustywhite7/econ8310-assignment2/refs/heads/main/assignment2test.csv", quotechar='"', engine="python", on_bad_lines='skip')
 
 for col in test.columns:
     if test[col].dtype == 'object':
