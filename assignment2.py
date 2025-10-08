@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 
 # loading and preparing training data
-data = pd.read_csv(r"C:\Users\deves\Desktop\ASSIGNMENTS\econ8310-assignment2\assignment2train.csv")
+data = pd.read_csv("https://github.com/dustywhite7/Econ8310/raw/master/AssignmentData/assignment3.csv")
 
 # separating independent and dependent variables
 y = data['meal']  # dependent
